@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="student-registration.css">
+</head>
+<script src="student-registration.js">
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+  
+<body>
+    <img src="./student-image.jpg" height="900px" width="100%">
+    <form onsubmit="return validation()" action="after-registration.html">   
+         <div class="box">
+            <h3 class="head" id="head">Student Registration</h3>
+            <label>Name :</label>
+            <br>
+            <input type="text" class="name" id="uname" placeholder="Enter your name">
+            <br>
+            <label>Mother's Name :</label>
+            <br>
+            <input type="text" class="name" id="mname" placeholder="Enter your mother's name">
+            <br>
+            <label>Father's Name :</label>
+            <br>
+            <input type="text" class="name" id="fname" placeholder="Enter your father's name">
+            <br>
+            <label>Gender :</label>
+            <br>
+            <span class="male">
+            <input type="radio" name="gender">
+            Male
+            </span>
+            <span class="female">
+            <input type="radio" name="gender" >
+            Female
+            </span>
+            <span class="others">
+            <input type="radio" name="gender">
+            Others
+            </span>
+            <br>
+            <label>Date Of Birth :</label>
+            <br>
+            <input type="date" placeholder="Enter your age" class="age" id="db">
+            <br>
+            <label>Blood Group :</label>
+            <br>
+            <select class="blood-group" placeholder="select your blood group" id="bg">
+                <option>Select option</option>
+                <option>A+</option>
+                <option>B+</option>
+                <option>AB+</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>AB-</option>
+                <option>A-</option>
+            </select>
+            </span>
+            <br>
+            <label>Address :</label>
+            <br>
+            <input type="text" placeholder="Enter your address" class="address" id="address">
+            <br>
+            <label>Phone Number :</label>
+            <br>
+            <input type="number" id="phone" placeholder="0000000000" class="phone">
+            <br>
+            <label>E-mail :</label>
+            <br>
+            <input type="email" id="mail" placeholder="email@xyz.com" class="email">
+            <br>
+            <button type="submit" class="submit" id="sub">Register</button>
+        </div>
+    </form>
+    <script>
+    
+    $(document).ready(function(){  
+
+        $('#head').mouseenter(function(){
+            $('#head').css("color","red");
+        })
+        $('#head').mouseleave(function(){
+            $('#head').css("color","rgb(5, 71, 71)");
+        })
+
+        $('#uname').keydown(function(){  
+            $('#uname').css("background-color", "rgb(230, 106, 24)");  
+        });  
+        $('#uname').keyup(function(){  
+            $('#uname').css("background-color", "rgb(17, 236, 236)");  
+        });  
+
+        $('#mname').keydown(function(){  
+            $('#mname').css("background-color", "rgb(230, 106, 24)");  
+        });  
+        $('#mname').keyup(function(){  
+            $('#mname').css("background-color", "rgb(17, 236, 236)");  
+        });  
+
+         $('#fname').keydown(function(){  
+            $('#fname').css("background-color", "rgb(230, 106, 24)");  
+        });  
+        $('#fname').keyup(function(){  
+            $('#fname').css("background-color", "rgb(17, 236, 236)");  
+        });  
+
+        $("#db").mousedown(function(){  
+            $("#db").css("background-color", "rgb(230, 106, 24)");  
+        });  
+        $("#db").mouseup(function(){  
+            $("#db").css("background-color", "rgb(17, 236, 236)");  
+        });  
+
+        $("#bg").mousedown(function(){  
+            $("#bg").css("background-color", "rgb(230, 106, 24)");  
+        });  
+        $("#bg").mouseup(function(){  
+            $("#bg").css("background-color", "rgb(17, 236, 236)");  
+        });  
+
+        $('#address').keydown(function(){  
+            $('#address').css("background-color", "rgb(230, 106, 24)");  
+        });  
+        $('#address').keyup(function(){  
+            $('#address').css("background-color", "rgb(17, 236, 236)");  
+        });  
+
+        $('#phone').keydown(function(){  
+            $('#phone').css("background-color", "rgb(230, 106, 24)");  
+        });  
+        $('#phone').keyup(function(){  
+            $('#phone').css("background-color", "rgb(17, 236, 236)");  
+        });  
+
+        $('#mail').keydown(function(){  
+            $('#mail').css("background-color", "rgb(230, 106, 24)");  
+        });  
+        $('#mail').keyup(function(){  
+            $('#mail').css("background-color", "rgb(17, 236, 236)");  
+        });  
+
+
+    });
+
+
+
+
+    </script>
+</body>
+</html>
